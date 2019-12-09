@@ -29,6 +29,7 @@ import { Users } from './components/Users';
 import CounterDemo from './components/CounterDemo';
 import { UserProvider } from './components/UserContext';
 import { ComponentC } from './components/ComponentC';
+import PostListComponent from './components/PostListComponent';
 //import Table from '@material-ui/core/Table/Table';
 class App extends Component {
 
@@ -80,11 +81,15 @@ class App extends Component {
      <CounterDemo render={(count,incrementCount)=>(
      <HoverCounterTwo count={count} incrementCount={incrementCount} />
      )}/>
-     */}
+   
 <UserProvider value="Lakhan Singh">
+ 
+
   <ComponentC/>
 </UserProvider>
+ */}
 
+<PostListComponent/>
         </div>
     );
   }
